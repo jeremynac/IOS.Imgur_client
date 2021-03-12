@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0412801625483127006DD306 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 0412801525483127006DD306 /* WaterfallGrid */; };
+		0412801B25484B1B006DD306 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412801A25484B1B006DD306 /* Tabbar.swift */; };
+		044BCFC72549B3D10045B96C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BCFC62549B3D10045B96C /* LaunchScreen.storyboard */; };
+		045CEE88254054A5005BD52D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CEE87254054A5005BD52D /* CircleImage.swift */; };
+		045CEE8D254054D3005BD52D /* MapImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CEE8C254054D3005BD52D /* MapImage.swift */; };
+		0487BF0A253493A400088336 /* EpictureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487BF09253493A400088336 /* EpictureApp.swift */; };
+		0487BF0C253493A400088336 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487BF0B253493A400088336 /* ContentView.swift */; };
+		0487BF0E253493A600088336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0487BF0D253493A600088336 /* Assets.xcassets */; };
+		0487BF11253493A600088336 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0487BF10253493A600088336 /* Preview Assets.xcassets */; };
+		0487BF1C253493A600088336 /* EpictureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487BF1B253493A600088336 /* EpictureTests.swift */; };
+		0487BF27253493A600088336 /* EpictureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487BF26253493A600088336 /* EpictureUITests.swift */; };
+		04C530A725406F1C005BE4AE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C530A625406F1C005BE4AE /* ImagePicker.swift */; };
+		04C530AC2540AA9C005BE4AE /* CoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C530AB2540AA9C005BE4AE /* CoreImage.swift */; };
+		04C530B12540AE11005BE4AE /* ImageSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C530B02540AE11005BE4AE /* ImageSelect.swift */; };
+		4774DC222549797100FC1AC9 /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 4774DC212549797100FC1AC9 /* SwiftUIPullToRefresh */; };
+		4774DC27254979C800FC1AC9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4774DC26254979C800FC1AC9 /* Profile.swift */; };
+		478FF0282544C92A00F5BA1D /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 478FF0272544C92A00F5BA1D /* OAuthSwift */; };
+		47AFA0392541A82E00921C69 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AFA0382541A82E00921C69 /* Request.swift */; };
+		47AFA03F2541A88A00921C69 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 47AFA03E2541A88A00921C69 /* Alamofire */; };
+		47AFA0452541A8C200921C69 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 47AFA0442541A8C200921C69 /* SDWebImage */; };
+		47AFA04B2541A94500921C69 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 47AFA04A2541A94500921C69 /* SwiftyJSON */; };
+		47F1D2F62543025C008BE175 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 47F1D2F52543025C008BE175 /* KingfisherSwiftUI */; };
+		47F1D2F82543025C008BE175 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 47F1D2F72543025C008BE175 /* Kingfisher */; };
+		47F765BD2548F23F00686914 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F765BC2548F23F00686914 /* Display.swift */; };
+		47F765C32548F27D00686914 /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 47F765C22548F27D00686914 /* VideoPlayer */; };
+		47F765C92548F28700686914 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 47F765C82548F28700686914 /* SDWebImageSwiftUI */; };
+		47FF3BC425462E1600B90015 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF3BC325462E1600B90015 /* Connect.swift */; };
+		47FF3BC925462EA800B90015 /* Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF3BC825462EA800B90015 /* Vars.swift */; };
+		47FF3BCE25462ED500B90015 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF3BCD25462ED500B90015 /* Gallery.swift */; };
+		47FF3BD325462F1600B90015 /* GalleryFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF3BD225462F1600B90015 /* GalleryFuncs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0487BF18253493A600088336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0487BEFE253493A300088336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0487BF05253493A300088336;
+			remoteInfo = Epicture;
+		};
+		0487BF23253493A600088336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0487BEFE253493A300088336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0487BF05253493A300088336;
+			remoteInfo = Epicture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0412801A25484B1B006DD306 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		044BCFC62549B3D10045B96C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045CEE87254054A5005BD52D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		045CEE8C254054D3005BD52D /* MapImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapImage.swift; sourceTree = "<group>"; };
+		0487BF06253493A400088336 /* Epicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0487BF09253493A400088336 /* EpictureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpictureApp.swift; sourceTree = "<group>"; };
+		0487BF0B253493A400088336 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0487BF0D253493A600088336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0487BF10253493A600088336 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0487BF12253493A600088336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0487BF17253493A600088336 /* EpictureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpictureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0487BF1B253493A600088336 /* EpictureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpictureTests.swift; sourceTree = "<group>"; };
+		0487BF1D253493A600088336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0487BF22253493A600088336 /* EpictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0487BF26253493A600088336 /* EpictureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpictureUITests.swift; sourceTree = "<group>"; };
+		0487BF28253493A600088336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C530A625406F1C005BE4AE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		04C530AB2540AA9C005BE4AE /* CoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImage.swift; sourceTree = "<group>"; };
+		04C530B02540AE11005BE4AE /* ImageSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelect.swift; sourceTree = "<group>"; };
+		4774DC26254979C800FC1AC9 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		47AFA0382541A82E00921C69 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		47F765BC2548F23F00686914 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		47FF3BC325462E1600B90015 /* Connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
+		47FF3BC825462EA800B90015 /* Vars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vars.swift; sourceTree = "<group>"; };
+		47FF3BCD25462ED500B90015 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		47FF3BD225462F1600B90015 /* GalleryFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFuncs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0487BF03253493A300088336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AFA04B2541A94500921C69 /* SwiftyJSON in Frameworks */,
+				47AFA0452541A8C200921C69 /* SDWebImage in Frameworks */,
+				4774DC222549797100FC1AC9 /* SwiftUIPullToRefresh in Frameworks */,
+				478FF0282544C92A00F5BA1D /* OAuthSwift in Frameworks */,
+				47F765C92548F28700686914 /* SDWebImageSwiftUI in Frameworks */,
+				47F1D2F62543025C008BE175 /* KingfisherSwiftUI in Frameworks */,
+				47AFA03F2541A88A00921C69 /* Alamofire in Frameworks */,
+				0412801625483127006DD306 /* WaterfallGrid in Frameworks */,
+				47F1D2F82543025C008BE175 /* Kingfisher in Frameworks */,
+				47F765C32548F27D00686914 /* VideoPlayer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0487BF14253493A600088336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0487BF1F253493A600088336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0487BEFD253493A300088336 = {
+			isa = PBXGroup;
+			children = (
+				0487BF08253493A400088336 /* Epicture */,
+				0487BF1A253493A600088336 /* EpictureTests */,
+				0487BF25253493A600088336 /* EpictureUITests */,
+				0487BF07253493A400088336 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0487BF07253493A400088336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0487BF06253493A400088336 /* Epicture.app */,
+				0487BF17253493A600088336 /* EpictureTests.xctest */,
+				0487BF22253493A600088336 /* EpictureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0487BF08253493A400088336 /* Epicture */ = {
+			isa = PBXGroup;
+			children = (
+				0487BF09253493A400088336 /* EpictureApp.swift */,
+				4774DC26254979C800FC1AC9 /* Profile.swift */,
+				0487BF0B253493A400088336 /* ContentView.swift */,
+				04C530A625406F1C005BE4AE /* ImagePicker.swift */,
+				04C530B02540AE11005BE4AE /* ImageSelect.swift */,
+				0487BF0D253493A600088336 /* Assets.xcassets */,
+				0487BF12253493A600088336 /* Info.plist */,
+				0487BF0F253493A600088336 /* Preview Content */,
+				045CEE87254054A5005BD52D /* CircleImage.swift */,
+				045CEE8C254054D3005BD52D /* MapImage.swift */,
+				0412801A25484B1B006DD306 /* Tabbar.swift */,
+				47F765BC2548F23F00686914 /* Display.swift */,
+				04C530AB2540AA9C005BE4AE /* CoreImage.swift */,
+				47AFA0382541A82E00921C69 /* Request.swift */,
+				47FF3BD225462F1600B90015 /* GalleryFuncs.swift */,
+				47FF3BCD25462ED500B90015 /* Gallery.swift */,
+				47FF3BC825462EA800B90015 /* Vars.swift */,
+				47FF3BC325462E1600B90015 /* Connect.swift */,
+				044BCFC62549B3D10045B96C /* LaunchScreen.storyboard */,
+			);
+			path = Epicture;
+			sourceTree = "<group>";
+		};
+		0487BF0F253493A600088336 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0487BF10253493A600088336 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0487BF1A253493A600088336 /* EpictureTests */ = {
+			isa = PBXGroup;
+			children = (
+				0487BF1B253493A600088336 /* EpictureTests.swift */,
+				0487BF1D253493A600088336 /* Info.plist */,
+			);
+			path = EpictureTests;
+			sourceTree = "<group>";
+		};
+		0487BF25253493A600088336 /* EpictureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0487BF26253493A600088336 /* EpictureUITests.swift */,
+				0487BF28253493A600088336 /* Info.plist */,
+			);
+			path = EpictureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0487BF05253493A300088336 /* Epicture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0487BF2B253493A600088336 /* Build configuration list for PBXNativeTarget "Epicture" */;
+			buildPhases = (
+				0487BF02253493A300088336 /* Sources */,
+				0487BF03253493A300088336 /* Frameworks */,
+				0487BF04253493A300088336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Epicture;
+			packageProductDependencies = (
+				47AFA03E2541A88A00921C69 /* Alamofire */,
+				47AFA0442541A8C200921C69 /* SDWebImage */,
+				47AFA04A2541A94500921C69 /* SwiftyJSON */,
+				47F1D2F52543025C008BE175 /* KingfisherSwiftUI */,
+				47F1D2F72543025C008BE175 /* Kingfisher */,
+				478FF0272544C92A00F5BA1D /* OAuthSwift */,
+				0412801525483127006DD306 /* WaterfallGrid */,
+				47F765C22548F27D00686914 /* VideoPlayer */,
+				47F765C82548F28700686914 /* SDWebImageSwiftUI */,
+				4774DC212549797100FC1AC9 /* SwiftUIPullToRefresh */,
+			);
+			productName = Epicture;
+			productReference = 0487BF06253493A400088336 /* Epicture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0487BF16253493A600088336 /* EpictureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0487BF2E253493A600088336 /* Build configuration list for PBXNativeTarget "EpictureTests" */;
+			buildPhases = (
+				0487BF13253493A600088336 /* Sources */,
+				0487BF14253493A600088336 /* Frameworks */,
+				0487BF15253493A600088336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0487BF19253493A600088336 /* PBXTargetDependency */,
+			);
+			name = EpictureTests;
+			productName = EpictureTests;
+			productReference = 0487BF17253493A600088336 /* EpictureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0487BF21253493A600088336 /* EpictureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0487BF31253493A600088336 /* Build configuration list for PBXNativeTarget "EpictureUITests" */;
+			buildPhases = (
+				0487BF1E253493A600088336 /* Sources */,
+				0487BF1F253493A600088336 /* Frameworks */,
+				0487BF20253493A600088336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0487BF24253493A600088336 /* PBXTargetDependency */,
+			);
+			name = EpictureUITests;
+			productName = EpictureUITests;
+			productReference = 0487BF22253493A600088336 /* EpictureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0487BEFE253493A300088336 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					0487BF05253493A300088336 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					0487BF16253493A600088336 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 0487BF05253493A300088336;
+					};
+					0487BF21253493A600088336 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 0487BF05253493A300088336;
+					};
+				};
+			};
+			buildConfigurationList = 0487BF01253493A300088336 /* Build configuration list for PBXProject "Epicture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0487BEFD253493A300088336;
+			packageReferences = (
+				47AFA03D2541A88A00921C69 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				47AFA0432541A8C200921C69 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				47AFA0492541A94500921C69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				47F1D2F42543025C008BE175 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				478FF0262544C92A00F5BA1D /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+				0412801425483127006DD306 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
+				47F765C12548F27D00686914 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
+				47F765C72548F28700686914 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				4774DC202549797100FC1AC9 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */,
+			);
+			productRefGroup = 0487BF07253493A400088336 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0487BF05253493A300088336 /* Epicture */,
+				0487BF16253493A600088336 /* EpictureTests */,
+				0487BF21253493A600088336 /* EpictureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0487BF04253493A300088336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044BCFC72549B3D10045B96C /* LaunchScreen.storyboard in Resources */,
+				0487BF11253493A600088336 /* Preview Assets.xcassets in Resources */,
+				0487BF0E253493A600088336 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0487BF15253493A600088336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0487BF20253493A600088336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0487BF02253493A300088336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C530AC2540AA9C005BE4AE /* CoreImage.swift in Sources */,
+				4774DC27254979C800FC1AC9 /* Profile.swift in Sources */,
+				47FF3BD325462F1600B90015 /* GalleryFuncs.swift in Sources */,
+				47F765BD2548F23F00686914 /* Display.swift in Sources */,
+				47AFA0392541A82E00921C69 /* Request.swift in Sources */,
+				0487BF0C253493A400088336 /* ContentView.swift in Sources */,
+				0412801B25484B1B006DD306 /* Tabbar.swift in Sources */,
+				0487BF0A253493A400088336 /* EpictureApp.swift in Sources */,
+				04C530A725406F1C005BE4AE /* ImagePicker.swift in Sources */,
+				47FF3BCE25462ED500B90015 /* Gallery.swift in Sources */,
+				045CEE8D254054D3005BD52D /* MapImage.swift in Sources */,
+				04C530B12540AE11005BE4AE /* ImageSelect.swift in Sources */,
+				47FF3BC925462EA800B90015 /* Vars.swift in Sources */,
+				045CEE88254054A5005BD52D /* CircleImage.swift in Sources */,
+				47FF3BC425462E1600B90015 /* Connect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0487BF13253493A600088336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0487BF1C253493A600088336 /* EpictureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0487BF1E253493A600088336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0487BF27253493A600088336 /* EpictureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0487BF19253493A600088336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0487BF05253493A300088336 /* Epicture */;
+			targetProxy = 0487BF18253493A600088336 /* PBXContainerItemProxy */;
+		};
+		0487BF24253493A600088336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0487BF05253493A300088336 /* Epicture */;
+			targetProxy = 0487BF23253493A600088336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0487BF29253493A600088336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0487BF2A253493A600088336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0487BF2C253493A600088336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Epicture/Preview Content\"";
+				DEVELOPMENT_TEAM = 2XV97F7T2K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Epicture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.Epicture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0487BF2D253493A600088336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Epicture/Preview Content\"";
+				DEVELOPMENT_TEAM = 2XV97F7T2K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Epicture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.Epicture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0487BF2F253493A600088336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EpictureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.EpictureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Epicture.app/Epicture";
+			};
+			name = Debug;
+		};
+		0487BF30253493A600088336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EpictureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.EpictureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Epicture.app/Epicture";
+			};
+			name = Release;
+		};
+		0487BF32253493A600088336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EpictureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.EpictureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Epicture;
+			};
+			name = Debug;
+		};
+		0487BF33253493A600088336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EpictureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Anthony.EpictureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Epicture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0487BF01253493A300088336 /* Build configuration list for PBXProject "Epicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0487BF29253493A600088336 /* Debug */,
+				0487BF2A253493A600088336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0487BF2B253493A600088336 /* Build configuration list for PBXNativeTarget "Epicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0487BF2C253493A600088336 /* Debug */,
+				0487BF2D253493A600088336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0487BF2E253493A600088336 /* Build configuration list for PBXNativeTarget "EpictureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0487BF2F253493A600088336 /* Debug */,
+				0487BF30253493A600088336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0487BF31253493A600088336 /* Build configuration list for PBXNativeTarget "EpictureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0487BF32253493A600088336 /* Debug */,
+				0487BF33253493A600088336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0412801425483127006DD306 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		4774DC202549797100FC1AC9 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/SwiftUI-PullToRefresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		478FF0262544C92A00F5BA1D /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		47AFA03D2541A88A00921C69 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		47AFA0432541A8C200921C69 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.3;
+			};
+		};
+		47AFA0492541A94500921C69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		47F1D2F42543025C008BE175 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.6;
+			};
+		};
+		47F765C12548F27D00686914 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.6;
+			};
+		};
+		47F765C72548F28700686914 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0412801525483127006DD306 /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0412801425483127006DD306 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
+		4774DC212549797100FC1AC9 /* SwiftUIPullToRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4774DC202549797100FC1AC9 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */;
+			productName = SwiftUIPullToRefresh;
+		};
+		478FF0272544C92A00F5BA1D /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 478FF0262544C92A00F5BA1D /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+		47AFA03E2541A88A00921C69 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47AFA03D2541A88A00921C69 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		47AFA0442541A8C200921C69 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47AFA0432541A8C200921C69 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		47AFA04A2541A94500921C69 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47AFA0492541A94500921C69 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		47F1D2F52543025C008BE175 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47F1D2F42543025C008BE175 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+		47F1D2F72543025C008BE175 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47F1D2F42543025C008BE175 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		47F765C22548F27D00686914 /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47F765C12548F27D00686914 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
+		};
+		47F765C82548F28700686914 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47F765C72548F28700686914 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0487BEFE253493A300088336 /* Project object */;
+}
